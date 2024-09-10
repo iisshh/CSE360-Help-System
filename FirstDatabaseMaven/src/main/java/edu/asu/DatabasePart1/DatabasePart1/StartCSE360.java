@@ -67,9 +67,9 @@ public class StartCSE360 {
 		String choice = scanner.nextLine();
 		switch(choice) {
 		case "1": 
-			System.out.print("Enter Admin Email: ");
+			System.out.print("Enter User Email: ");
 			email = scanner.nextLine();
-			System.out.print("Enter Admin Password: ");
+			System.out.print("Enter User Password: ");
 			password = scanner.nextLine(); 
 			// Check if user already exists in the database
 		    if (!databaseHelper.doesUserExist(email)) {
@@ -80,9 +80,9 @@ public class StartCSE360 {
 		    }
 			break;
 		case "2":
-			System.out.print("Enter Admin Email: ");
+			System.out.print("Enter User Email: ");
 			email = scanner.nextLine();
-			System.out.print("Enter Admin Password: ");
+			System.out.print("Enter User Password: ");
 			password = scanner.nextLine();
 			if (databaseHelper.login(email, password, "user")) {
 				System.out.println("User login successful.");
